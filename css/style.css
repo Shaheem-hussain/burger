@@ -1,0 +1,1226 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: 'Mitr', sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 35px;
+	font-weight: 100;
+}
+input,textarea,select{
+	font-family: 'Mitr', sans-serif;
+	font-weight: 400;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: 'Mitr', sans-serif;
+	font-weight: 400;
+    color: #787878;
+
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1100px;
+}
+:root{
+    --main-color:#f6af42;
+}
+h2,h3 {
+    color: #454545;
+}
+h2 {
+	font-size: 44px;
+	font-weight: 500;
+	line-height: 1.2em;
+}
+h4 {
+    color:#719a29;
+	font-size: 19px;
+	font-weight: 400;
+}
+a {
+	color: #000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#home { 
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/carousel-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+#home header { 
+	height: 50px;
+	padding: 0 60px;
+	display: flex;
+	justify-content: space-between;
+}
+#home header div.left { 
+
+}
+#home header div.left h1 { 
+	font-size: 42px;
+}
+#home header div.left h1 a { 
+	color: var(--main-color);
+	font-weight: 500;
+	display: inline-block;
+}
+#home header div.left h1 a span { 
+	color: #719a29;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+#home header div.left h1 a span:hover { 
+	color: var(--main-color);
+}
+#home header div.right { 
+	padding: 23px 0 0;
+}
+#home header div.right nav { 
+
+}
+#home header div.right nav ul.nav-links { 
+	display: flex;
+	justify-content: space-between;
+}
+#home header div.right nav ul.nav-links li.links { 
+	margin-right: 20px;
+}
+#home header div.right nav ul.nav-links li.links:last-child { 
+	margin-right: 0;
+}
+#home header div.right nav ul.nav-links li.links a { 
+	display: inline-block;
+	font-size: 17px;
+	color: #fff;
+	transition: 0.3s ease;
+}
+#home header div.right nav ul.nav-links li.links:hover a { 
+	color: var(--main-color);
+}
+#home header div.right nav ul.nav-links li.links a.active { 
+	color: var(--main-color);
+}
+#home header div.right nav ul.nav-links li.links:nth-child(7) div.list {
+	display: none;
+}
+#home header div.right nav ul.nav-links li.links:nth-child(7) div.list ul{
+	
+}
+#home header div.right nav ul.nav-links li.links:nth-child(7) div.list ul li.inner-list {
+	margin: 0;
+	text-align: center;
+	background-color: #fff;
+	padding: 10px;
+	transition: 0.3s ease;
+}
+#home header div.right nav ul.nav-links li.links:nth-child(7) div.list ul li.inner-list:hover {
+	margin: 0;
+	text-align: center;
+	background-color: #719a29;
+	cursor: pointer;
+}
+#home header div.right nav ul.nav-links li.links:nth-child(7) div.list ul li.inner-list:hover a {
+	color: #fff;
+}
+#home header div.right nav ul.nav-links li.links:nth-child(7) div.list ul li.inner-list a{
+	color: #000;
+	font-size: 16px;
+}
+#home header div.right nav ul.nav-links li.links:nth-child(7):hover .list { 
+	display:block;
+}
+#home div.arrow-button {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+#home div.arrow-button  a {
+	display: inline-block;
+}
+#home div.arrow-button a i {
+	background-color: var(--main-color);
+	color: #fff;
+	padding: 25px 20px;
+	border-radius: 5px;
+	transition: 0.6s;
+}
+#home div.arrow-button:hover a i {
+	background-color: #719a29;
+}
+
+#spotlight { 
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 190px 0;
+}
+#spotlight section.wrapper { 
+
+}
+#spotlight section.wrapper h1 { 
+	font-weight: 500;
+	font-size: 55px;
+	color: #fff;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+#spotlight section.wrapper h1 span { 
+	font-weight: 500;
+	font-size: 60px;
+	color: var(--main-color);
+}
+#spotlight section.wrapper p { 
+	color: #fff;
+	font-size: 19px;
+	max-width: 73%;
+	margin: 0 auto 30px;
+}
+#spotlight section.wrapper a.yellow-button { 
+	background-color: var(--main-color);
+	padding: 13px 23px;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+	margin-right: 10px;
+	border: 2px solid var(--main-color);
+	transition: 0.5s ease;
+}
+#spotlight section.wrapper a.yellow-button:hover { 
+	background-color: transparent;
+}
+#spotlight section.wrapper a.green-button { 
+	background-color: #719a29;
+	padding: 13px 23px;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+	border: 2px solid #719a29;
+	transition: 0.5s ease;
+}
+#spotlight section.wrapper a.green-button:hover { 
+	background-color: transparent;
+}
+
+#booking { 
+	background-color: #f5f5f5;
+}
+#booking section.wrapper { 
+	display: flex;
+	justify-content: space-between;
+}
+#booking div.left { 
+	padding: 100px 0;
+	width: 60%;
+}
+#booking div.left h4 { 
+	font-size: 19px;
+	font-weight: 400;
+}
+#booking div.left h2 { 
+	font-size: 44px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+#booking div.left p { 
+	margin-bottom: 20px;
+}
+#booking div.left p:last-child { 
+	margin-bottom: 0;
+}
+#booking div.right { 
+	width: 37%;
+	background-color: var(--main-color);
+	padding: 60px 30px;
+}
+#booking div.right form { 
+}
+#booking div.right form div.one-by-one { 
+	position: relative;
+}
+#booking div.right form div.one-by-one input { 
+	border: 1.5px solid #fff;
+	padding: 10px 8px;
+	width: 100%;
+	border-radius: 5px;
+	color: #fff;
+}
+#booking div.right form div.one-by-one input::placeholder { 
+	color: #fff;
+}
+#booking div.right form div.one-by-one input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+#booking div.right form div.one-by-one input[type=text] { 
+	margin-bottom: 15px;
+}
+#booking div.right form div.one-by-one input[type=email] { 
+	margin-bottom: 15px;
+}
+#booking div.right form div.one-by-one input[type=number] { 
+	margin-bottom: 15px;
+}
+#booking div.right form div.one-by-one input[type=date] { 
+	color: #fff;
+	margin-bottom: 15px;
+}
+#booking div.right form div.one-by-one input[type=time] { 
+	color: #fff;
+	margin-bottom: 15px;
+}
+#booking div.right form div.one-by-one i { 
+	position: absolute;
+	right: 17px;
+	top: 15px;
+	font-size: 14px;
+	color: #fff;
+}
+#booking div.right form div.one-by-one select { 
+	width: 100%;
+	border: 1.5px solid #fff;
+	padding: 10px 8px;
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+#booking div.right form div.one-by-one select option{ 
+	color: #000;
+}
+#booking div.right form div.one-by-one input[type=submit] { 
+	color: var(--main-color);
+	background-color: #fff;
+	font-size: 15px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.7s ease;
+}
+#booking div.right form div.one-by-one input[type=submit]:hover { 
+	background-color: transparent;
+	color: #fff;
+}
+
+#about { 
+	padding: 50px 0 80px;
+}
+#about section.wrapper { 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#about div.left { 
+	width: 47%;
+	position: relative;
+}
+#about div.left div.image-container { 
+	display: block;
+	width: 100%;
+}
+#about div.left div.image-container img { 
+	display: block;
+	width: 100%;
+	border-radius: 15px
+}
+#about div.left div.playbutton { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#about div.left div.playbutton a.button {
+	display: inline-block;
+	background-color: var(--main-color);
+	padding: 30px 31px 29px 39px;
+	border-radius: 50%;
+	animation: glowing 2s linear infinite;
+}
+#about div.left div.playbutton a.button i.fas { 
+	font-size: 50px;
+	color: #fff;
+}
+#about div.right { 
+	width: 50%;
+}
+#about div.right h4 { 
+
+}
+#about div.right h2 { 
+	margin-bottom: 30px;
+}
+#about div.right p { 
+	margin-bottom: 20px;
+}
+#about div.right a.button { 
+	padding: 12px 20px;
+	background-color: var(--main-color);
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	display: inline-block;
+	border: 1px solid var(--main-color);
+	transition: 0.6s ease;
+}
+#about div.right a.button:hover { 
+	background-color: transparent;
+	color: var(--main-color);
+}
+@keyframes glowing {
+	0% {
+		box-shadow: 0 0 0 0 rgba(246,175,66,.7),0 0 0 0 rgba(246,175,66,0);
+	  }
+	40% {
+		box-shadow: 0 0 0 50px rgba(246,175,66,0), 0 0 0 20px rgba(246,175,66,0.7);
+	}
+	80% {
+		box-shadow: 0 0 0 50px rgba(246,175,66,0),0 0 0 40px rgba(246,175,66,0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(246,175,66,0),0 0 0 0 rgba(246,175,66,0);
+	  }
+}
+
+#features { 
+	padding-bottom: 100px;
+}
+#features section.wrapper { 
+	display: flex;
+	justify-content: space-between;
+}
+#features div.left { 
+	width: 38%;
+}
+#features div.left h4 { 
+
+}
+#features div.left h2 { 
+	margin-bottom: 30px;
+}
+#features div.left div.image-container { 
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+#features div.left div.image-container img { 
+	display: block;
+	width: 50%;;
+}
+#features div.left div.image-container img:nth-child(1) { 
+	border-top-left-radius: 15px ;
+}
+#features div.left div.image-container img:nth-child(2) { 
+	border-top-right-radius: 15px ;
+}
+#features div.left div.image-container img:nth-child(3) { 
+	height: 120px;
+}
+#features div.left div.image-container img:nth-child(4) { 
+	height: 120px;
+}
+#features div.left p { 
+	margin-bottom: 30px;
+}
+#features div.left a.button { 
+	display: inline-block;
+	padding: 12px 0;
+	width: 100%;
+	background-color: var(--main-color);
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	border: 1px solid var(--main-color);
+	transition: 0.6s ease;
+}
+#features div.left a.button:hover { 
+	background-color: transparent;
+	color: var(--main-color);
+}
+#features div.right { 
+	width: 58%;
+}
+#features div.right ul { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#features div.right ul li { 
+	width: 48%;
+	margin-bottom: 40px;
+}
+#features div.right ul li:nth-child(5) { 
+	margin-bottom: 0;
+}
+#features div.right ul li:nth-child(6) { 
+	margin-bottom: 0;
+}
+#features div.right ul li div.icon { 
+	position: relative;
+	display: inline;
+}
+#features div.right ul li div.icon i:before { 
+	font-size: 60px;
+	background: -webkit-linear-gradient(#719a29,#f6af42);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	  margin-left: 0;
+	  z-index: 1;
+}
+#features div.right ul li div.icon div.circle{ 
+	position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    top: -41px;
+    right: 1px;
+    z-index: -1;
+}
+#features div.right ul li h3 { 
+	font-weight: 500;
+	line-height: 2em;
+}
+#features div.right ul li p { 
+	font-size: 15px;
+}
+
+#categories { 
+	background-color: #f5f5f5;
+}
+#categories { 
+	padding: 80px 0;
+}
+#categories ul { 
+	display: flex;
+	justify-content: space-between;
+}
+#categories ul li { 
+	width: 32%;
+	background-color: #fff;
+	text-align: center;
+	padding: 50px 20px 20px 20px;
+	border-radius: 15px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+#categories ul li i:before { 
+	font-size: 60px;
+	border: 3px dotted var(--main-color);
+	padding: 20px 5px 0 15px;
+	border-radius: 50%;
+	border-bottom: none;
+	border-right: none;
+	color: var(--main-color);
+	margin: 0 10px 0 0;
+	transition: 0.4s ease;
+}
+#categories ul li h3 { 
+	margin-top: 15px;
+	font-weight: 500;
+	font-size: 28px;
+}
+#categories ul li p { 
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+#categories ul li:hover i:before { 
+	color: #719a29;
+	border-color: #719a29;
+}
+#categories ul li div.hover-effects {
+}
+#categories ul li div.hover-effects a.button { 
+	color: var(--main-color);
+	font-size: 16px;
+	transition: 0.4s ease;
+	display: inline-block;
+}
+#categories ul li div.hover-effects:hover span.line { 
+	border-bottom: 1px solid #719a29;
+	width: 76px;
+}
+#categories ul li div.hover-effects:hover a.button { 
+	color: #719a29;
+}
+#categories ul li div.hover-effects span.line { 
+	height: 1px;
+    width: 54px;
+    border-bottom: 1px solid var(--main-color);
+    display: block;
+    margin: 0 auto;
+	transition: 0.4s ease;
+}
+
+#menu { 
+	padding: 100px 0;
+}
+#menu section.top { 
+	text-align: center;
+	margin-bottom: 30px;
+}
+#menu section.top h4 { 
+
+}
+#menu section.top h2 { 
+	margin-bottom: 40px;
+}
+#menu section.top ul { 
+	display: flex;
+	justify-content: center;
+}
+#menu section.top ul li { 
+	margin-right: 10px;
+}
+#menu section.top ul li:last-child { 
+	margin-right: 0;
+}
+#menu section.top ul li a.button { 
+	background-color: var(--main-color);
+	padding: 8px 15px;
+	border-radius: 5px;
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	transition: 0.5s ease;
+}
+#menu section.top ul li a.button.active { 
+	background-color: #719a29;
+}
+#menu section.top ul li a.button:hover { 
+	background-color: #719a29;
+}
+#menu section.bottom { 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#menu section.bottom div.left { 
+	width: 55%;
+}
+#menu section.bottom div.left div.items { 
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+#menu section.bottom div.left div.items:last-child { 
+	margin-bottom: 0;
+}
+#menu section.bottom div.left div.items div.left-content { 
+	margin-right: 25px;
+}
+#menu section.bottom div.left div.items div.left-content div.round-image-container { 
+	width: 80px;
+}
+#menu section.bottom div.left div.items div.left-content div.round-image-container img { 
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+}
+#menu section.bottom div.left div.items div.right-content { 
+	
+}
+#menu section.bottom div.left div.items div.right-content div.single-line { 
+	display: flex;
+}
+#menu section.bottom div.left div.items div.right-content div.single-line h3 { 
+	font-size: 20px;
+	font-weight: 500;
+}
+#menu section.bottom div.left div.items div.right-content div.single-line h3.price { 
+	color: var(--main-color);
+}
+#menu section.bottom div.left div.items div.right-content div.single-line span { 
+	color: #bebebe
+}
+#menu section.bottom div.left div.items div.right-content p { 
+	font-size: 15px;
+}
+#menu section.bottom div.right { 
+	width: 45%;
+}
+#menu section.bottom div.right div.image-container { 
+	width: 90%;
+	margin: 0 auto;
+}
+#menu section.bottom div.right div.image-container img { 
+	border-radius: 15px;
+	width: 100%;
+	display: block;
+}
+
+#chef { 
+	padding-bottom: 100px;
+}
+#chef section.top { 
+	text-align: center;
+	margin-bottom: 40px;
+}
+#chef section.top h4 { 
+
+}
+#chef section.top h2 { 
+
+}
+#chef section.bottom { 
+	
+}
+#chef section.bottom ul { 
+	display: flex;
+	justify-content: space-between;
+}
+#chef section.bottom ul li { 
+	width: 23%;
+	border: 1px solid #e7e5e5;
+	border-radius: 15px;
+}
+#chef section.bottom ul li div.top { 
+	width: 100%;
+	display: block;
+	position: relative;
+}
+#chef section.bottom ul li div.top div.img-container { 
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#chef section.bottom ul li div.top div.img-container img { 
+	width: 100%;
+	display: block;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	transition: 0.6s;
+}
+#chef section.bottom ul li:hover div.top div.img-container img  { 
+	transform: translateY(-10px);
+	opacity: 0.5;
+}
+#chef section.bottom ul li div.top div.social {
+	position: absolute;
+	top: 50%;
+	height: 50px;
+	overflow: hidden;
+	left: 15%;
+}
+#chef section.bottom ul li div.top div.social i{
+	color: #fff;
+	border-radius: 50%;
+	padding: 12px;
+	background-color: var(--main-color);
+	transform: translateY(60px);
+	transition: 0.6s ;
+	cursor: pointer;
+}
+#chef section.bottom ul li div.top div.social i:nth-child(2){
+	padding: 12px 15px;
+}
+#chef section.bottom ul li div.top div.social i:nth-child(1) {
+	transition: 0.3s;
+}
+#chef section.bottom ul li div.top div.social i:nth-child(2) {
+	transition: 0.5s;
+}
+#chef section.bottom ul li div.top div.social i:nth-child(3) {
+	transition: 0.7s;
+}
+#chef section.bottom ul li div.top div.social i:nth-child(4) {
+	transition: 0.8s;
+}
+#chef section.bottom ul li:hover div.top div.social { 
+}
+#chef section.bottom ul li:hover div.top div.social i{ 
+	transform: translateY(0);
+}
+#chef section.bottom ul li div.top div.social i:hover{ 
+	background-color: #719a29;
+}
+#chef section.bottom ul li div.bottom { 
+	text-align: center;
+	padding: 15px 0;
+}
+#chef section.bottom ul li div.bottom h3 { 
+	font-weight: 500;
+}
+#chef section.bottom ul li div.bottom span { 
+	font-size: 16px;
+	color: #a7a4a4;
+}
+
+#testimonial { 
+	background-color: #f5f5f5;
+	padding: 100px 0;
+}
+#testimonial ul { 
+	display: flex;
+	justify-content: space-between;
+}
+#testimonial ul li { 
+	width: 32%;
+    background-color: #fff;
+    text-align: center;
+    padding:30px 35px;
+    border-radius: 15px;
+    box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+}
+#testimonial ul li div.img-container { 
+	width: 100px;
+	margin: 0 auto 20px;
+}
+#testimonial ul li div.img-container img { 
+	display: block;
+	width: 100%;
+	border-radius: 50%;
+}
+#testimonial ul li p { 
+	font-size: 15px;
+	line-height: 1.4em;
+	margin-bottom: 5px;
+}
+#testimonial ul li h3 { 
+	font-size: 18px;
+	font-weight: 500;
+}
+#testimonial ul li span { 
+	font-size: 15px;
+	color: #969696;
+}
+#testimonial div.pages { 
+	text-align: center;
+	margin-top: 30px;
+}
+#testimonial div.pages i.fas { 
+	font-size: 12px;
+	color: var(--main-color);
+}
+#testimonial div.pages i.fas.active { 
+	color: #719a29;
+}
+
+#contact { 
+	padding: 80px 0	;
+}
+#contact section.top { 
+	text-align: center;
+	margin-bottom: 30px;
+}
+#contact section.top h4 { 
+
+}
+#contact section.top h2 { 
+
+}
+#contact section.middle { 
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 30px;
+	background-color: #f5f5f5;
+	margin-bottom: 30px;
+}
+#contact section.middle div.item { 
+	display: flex;
+	align-items: center;
+	width: 23%;
+}
+#contact section.middle div.item div.left { 
+	margin-right: 20px;
+}
+#contact section.middle div.item div.left i.fas { 
+	color: #fff;
+	padding: 16px;
+	border-radius: 50%;
+	background-color: var(--main-color);
+	transition: 0.6s;
+}
+#contact section.middle div.item div.left i.fas:hover { 
+	background-color: #719a29;
+}
+#contact section.middle div.item div.right { 
+
+}
+#contact section.middle div.item div.right h4 { 
+	font-size: 17px;
+}
+#contact section.middle div.item div.right span { 
+	font-size: 15px;
+	color: #787878;
+}
+#contact section.middle div.item div.right a { 
+	font-size: 15px;
+	color: #787878;
+	display: inline-block;
+}
+#contact section.middle div.item div.right ul {
+	display: flex;
+}
+#contact section.middle div.item div.right ul li {
+	margin-right: 15px;
+}
+#contact section.middle div.item div.right ul li:last-child {
+	margin-right: 0;
+}
+#contact section.middle div.item div.right ul li a {
+	display: inline-block;
+}
+#contact section.middle div.item div.right ul li a i{
+	color: var(--main-color);
+	transition: 0.4s ease;
+}
+#contact section.middle div.item div.right ul li a:hover i {
+	color: #719a29;
+}
+#contact section.bottom { 
+	display: flex;
+	justify-content: space-between;
+}
+#contact section.bottom div.left { 
+	width: 45%;
+}
+#contact section.bottom div.left div.map-container { 
+	width: 100%;
+}
+#contact section.bottom div.left div.map-container iframe { 
+	display: block;
+	width: 100%;
+	border-radius: 15px;
+	height: 340px;
+}
+#contact section.bottom div.right { 
+	width: 50%
+}
+#contact section.bottom div.right form { 
+
+}
+#contact section.bottom div.right form input { 
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #e4e3e3;
+	padding: 6px;
+	margin-bottom: 20px;
+}
+#contact section.bottom div.right form input[type=submit] {
+	display: inline-block;
+	width: unset;
+	padding: 12px 25px;
+	background-color: var(--main-color);
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	border: 1px solid var(--main-color);
+	transition: 0.6s ease;
+	margin-bottom: 0;
+}
+#contact section.bottom div.right form input[type=submit]:hover {
+	background-color: transparent;
+	color: var(--main-color);
+}
+#contact section.bottom div.right form textarea { 
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #e4e3e3;
+	padding: 6px;
+	margin-bottom: 10px;
+}
+
+#blog { 
+	padding-bottom: 100px;
+}
+#blog section.top { 
+	text-align: center;
+	margin-bottom: 50px ;
+}
+#blog section.top h4 { 
+
+}
+#blog section.top h2 { 
+
+}
+#blog section.bottom { 
+}
+#blog section.bottom div.contents { 
+	display: flex;
+	justify-content: space-between;
+}
+#blog section.bottom div.contents div.items { 
+	width: 48%;
+}
+#blog section.bottom div.contents div.items div.image-container { 
+	width: 100%;
+}
+#blog section.bottom div.contents div.items div.image-container img { 
+	width: 100%;
+	display: block;
+	border-radius: 15px;
+}	
+#blog section.bottom div.contents div.items div.details { 
+	padding: 30px 20px;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+	border-radius: 15px;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #fff;
+	transform: translateY(-50px);
+}
+#blog section.bottom div.contents div.items div.details h3 { 
+	font-size: 19px;
+	font-weight: 500;
+}
+#blog section.bottom div.contents div.items div.details ul { 
+	display: flex;
+	margin-bottom: 10px;
+}
+#blog section.bottom div.contents div.items div.details ul li { 
+	margin-right: 10px;
+}
+#blog section.bottom div.contents div.items div.details ul li:last-child { 
+	margin-right: 0;
+}
+#blog section.bottom div.contents div.items div.details ul li a { 
+	display: inline-block;
+}
+#blog section.bottom div.contents div.items div.details ul li a i { 
+	font-size: 14px;
+	color: var(--main-color);
+}
+#blog section.bottom div.contents div.items div.details ul li a span { 
+	font-size: 14px;
+	color: #a7a4a4;
+}
+#blog section.bottom div.contents div.items div.details p {
+	margin-bottom: 10px;
+}
+#blog section.bottom div.contents div.items div.details a.button {
+	padding: 10px 15px;
+	background-color: var(--main-color);
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	display: inline-block;
+	border: 1px solid var(--main-color);
+	transition: 0.6s;
+}
+#blog section.bottom div.contents div.items div.details a.button:hover {
+	background-color: transparent;
+	color: var(--main-color);
+}
+
+footer { 
+	background-color: #f5f5f5;
+}
+footer section.top { 
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0 60px;
+}
+footer section.top div.left { 
+	width: 22%;
+}
+footer section.top div.left h3 { 
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+footer section.top div.left h3 span { 
+	border-bottom: 2px solid #719a29;
+	padding-bottom: 4px;
+	font-weight: 500;
+}
+footer section.top div.left div.items { 
+	margin-bottom: 15px;
+}
+footer section.top div.left div.items:nth-child(4){ 
+	margin-bottom: 20px;
+}
+footer section.top div.left div.items i { 
+	color: var(--main-color);
+	margin-right: 8px;
+}
+footer section.top div.left div.items span { 
+	color: #454545;
+	font-size: 16px;
+}
+footer section.top div.left div.items a { 
+	color: #454545;
+	font-size: 16px;
+	display: inline-block;
+}
+footer section.top div.left ul { 
+	display: flex;
+}
+footer section.top div.left ul li { 
+	margin-right: 10px;
+}
+footer section.top div.left ul li { 
+	margin-right: 10px;
+}
+footer section.top div.left ul li:last-child { 
+	margin-right: 0;
+}
+footer section.top div.left ul li a { 
+	display: inline-block;	
+}
+footer section.top div.left ul li a i { 
+	color: #fff;
+	background-color: var(--main-color);
+	padding: 10px 10px;
+	border-radius: 50%;
+	transition: 0.6s;
+}
+footer section.top div.left ul li:hover a i { 
+	background-color:#719a29;
+	
+}
+footer section.top div.left ul :nth-child(2) a i { 
+	padding: 10px 13px;
+}
+footer section.top div.middle { 
+	width: 22%;
+}
+footer section.top div.middle h3 { 
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+footer section.top div.middle h3 span { 
+	border-bottom: 2px solid #719a29;
+	padding-bottom: 4px;
+	font-weight: 500;
+}
+footer section.top div.middle ul { 
+
+}
+footer section.top div.middle ul li { 
+	margin-bottom: 10px;
+}
+footer section.top div.middle ul li:hover a span { 
+	transform: scale(1.1);
+	color: var(--main-color);
+}
+footer section.top div.middle ul li:last-child { 
+	margin-bottom: 0;
+}
+footer section.top div.middle ul li a { 
+	display: inline-block;
+}
+footer section.top div.middle ul li a i.fas { 
+	color: var(--main-color);
+}
+footer section.top div.middle ul li a span { 
+	color: #454545;
+	font-size: 16px;
+	transition: 0.4s;
+	display: inline-block;
+	margin-left: 5px;
+}
+footer section.top div.right { 
+	width: 40%;
+}
+footer section.top div.right h3 { 
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+footer section.top div.right h3 span { 
+	border-bottom: 2px solid #719a29;
+	padding-bottom: 4px;
+	font-weight: 500;
+}
+footer section.top div.right p { 
+	color: #454545;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+footer section.top div.right form { 
+
+}
+footer section.top div.right form div.submission { 
+	width: 100%;
+	position: relative;
+}
+footer section.top div.right form div.submission input[type=email] { 
+	border-radius: 5px;
+	border: 2px solid var(--main-color);
+	padding: 15px ;
+	width: 100%;
+}
+footer section.top div.right form div.submission input[type=submit] { 
+	position: absolute;
+	background-color: var(--main-color);
+	color: #fff;
+	border: 2px solid var(--main-color);
+	padding: 8px 15px;
+	border-radius: 5px;
+	right: 6px;
+	top: 6px;
+	display: inline-block;
+	transition: 0.6s;
+	cursor: pointer;
+}
+footer section.top div.right form div.submission input[type=submit]:hover { 
+	background-color: transparent;
+	color: var(--main-color);
+}
+footer section.bottom { 
+	background-color: #fff;
+	padding: 30px 0;
+	text-align: center;
+}
+footer section.bottom p { 
+
+}
+footer section.bottom p a { 
+	color: var(--main-color);
+	display: inline-block;
+	transition: 0.4s;
+}
+footer section.bottom p a:hover { 
+	color: #719a29;
+}
